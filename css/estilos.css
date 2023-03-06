@@ -251,11 +251,17 @@ body {
 /* SEÇÃO VÍDEOS */
 
 .videos__container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-area: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
     color: black;
     padding: 153px 20px 10px 20px;
+}
+
+.videos__item {
+    height: 19rem;
+    width: 17.5rem;
+    flex-grow: 1;
 }
 
 .descricao-video {
